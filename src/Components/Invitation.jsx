@@ -19,14 +19,14 @@ export default function Invitation() {
       <img
         src="/assets/cocktail-white.svg"
         alt="white cocktail"
-        className="absolute top-[25rem] right-0"
+        className="absolute top-[26rem] right-0"
       />
       <img
         src="/assets/cocktail-rounded-pink.svg"
         alt="pink rounded cocktail"
         className="absolute bottom-8 left-0"
       />
-      <div className="flex flex-col items-center pt-8">
+      <div className="flex flex-col items-center pt-16">
         <h1 className="text-center font-party text-9xl text-white text-shadow-white">
           18
         </h1>
@@ -71,7 +71,7 @@ export default function Invitation() {
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="z-10 mt-20 mb-4 cursor-pointer rounded-lg px-5 py-4 text-center font-dm text-white uppercase box-shadow-white outline-2 outline-white transition-all duration-300 hover:bg-white hover:text-black"
+          className="z-10 mt-20 mb-16 cursor-pointer rounded-lg px-5 py-4 text-center font-dm text-white uppercase box-shadow-white outline-2 outline-white transition-all duration-300 hover:bg-white hover:text-black"
         >
           conferma su whatsapp
         </a>
