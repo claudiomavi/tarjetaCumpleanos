@@ -36,7 +36,7 @@ export default function Invitation() {
         <h3 className="text-center font-dm text-white uppercase">
           festeggiamo il compleanno di {name}
         </h3>
-        <div className="flex items-center justify-center">
+      
           <h3 className="text-center font-dm text-white uppercase">
             alle {time} |{" "}
             <a
@@ -48,8 +48,8 @@ export default function Invitation() {
               {location}
             </a>
           </h3>
-          <img src="/assets/pin.svg" alt="position pin" className="w-[3rem]" />
-        </div>
+      
+        
         <div className="mt-12 flex items-center justify-center gap-3.5">
           <h3 className="text-center font-dm text-white uppercase">
             {date.day}
