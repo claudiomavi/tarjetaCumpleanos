@@ -20,3 +20,12 @@
 @utility box-shadow-white {
   box-shadow: var(--shadow-white);
 }
+
+html {
+  background: #6a7282;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 0;
+}
