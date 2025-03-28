@@ -1,92 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700&display=swap');
+@import "tailwindcss";
 
-/* Estilos generales */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+@font-face {
+  font-family: "Gistesy";
+  src: url(./fonts/Gistesy.ttf);
 }
 
-body {
-	font-family: 'Montserrat', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@theme {
+  --font-party: "Gistesy", sans-serif;
+  --font-dm: "DM Sans", sans-serif;
+  --shadow-white: 0 0 12px rgba(255, 255, 255, 0.8);
 }
 
-/* Contenedor principal */
-.invitation-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	background: linear-gradient(to right, #f472b6, #a78bfa, #3b82f6);
-	position: relative;
-	text-align: center;
-	padding: 1.5rem;
+@utility text-shadow-white {
+  text-shadow: var(--shadow-white);
 }
 
-.card {
-	background-color: black;
-	border: 1px solid #4b5563;
-	border-radius: 1rem;
-	padding: 2rem;
-	max-width: 28rem;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-	background-image: url('/assets/background.webp');
-	background-size: cover;
-	background-position: center center;
+@utility box-shadow-white {
+  box-shadow: var(--shadow-white);
 }
 
-.title {
-	font-size: 4rem;
-	font-weight: bold;
-	margin-bottom: 0.5rem;
-	color: white;
-	font-family: 'Great Vibes', sans-serif;
-}
-
-.subtitle {
-	font-size: 1.125rem;
-	font-style: italic;
-	margin-bottom: 1rem;
-	color: white;
-	font-family: 'Great Vibes', sans-serif;
-}
-
-.name {
-	font-size: 2.25rem;
-	font-weight: 600;
-	margin-bottom: 1rem;
-	color: white;
-	font-family: 'Great Vibes', sans-serif;
-}
-
-.info {
-	font-size: 1.125rem;
-	margin-bottom: 1rem;
-	color: white;
-	font-family: 'Great Vibes', sans-serif;
-}
-
-.buttons {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-	margin-top: 2rem;
-}
-
-.button {
-	background-color: transparent;
-	border: 2px solid white;
-	color: white;
-	padding: 0.75rem 1.5rem;
-	border-radius: 9999px;
-	font-size: 1.125rem;
-	font-weight: 600;
-	text-decoration: none;
-	text-align: center;
-	transition: background-color 0.3s, color 0.3s;
-}
-
-.button:hover {
-	background-color: white;
-	color: black;
+html {
+  background: #6a7282;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 0;
 }

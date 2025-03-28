@@ -1,34 +1,65 @@
-import { name, date, location, googleMapsLink, whatsappLink, dressCode } from '../datas/datas'
+import {
+  name,
+  date,
+  location,
+  time,
+  googleMapsLink,
+  whatsappLink,
+  dressCode,
+} from "../datas/datas";
 
 export default function Invitation() {
-	return (
-		<div className="invitation-container">
-			<div className="background-overlay"></div>
+  return (
+    <div className="relative flex max-h-[874px] max-w-[402px] flex-col items-center justify-center bg-[url(/assets/background.webp)] bg-cover shadow-2xl">
+      <div className="flex flex-col items-center pt-16">
+        <h1 className="text-center font-party text-9xl text-white text-shadow-white">
+          18
+        </h1>
+        <h1 className="pb-8 text-center font-party text-8xl text-pink-300 text-shadow-white">
+          Birthday Party
+        </h1>
+        <h3 className="text-center font-dm text-white uppercase">
+          festeggiamo il compleanno di {name}
+        </h3>
 
-			<div className="card">
-				<h1 className="title">18</h1>
-				<p className="subtitle">Sei invitato/a al diciottesimo di</p>
-				<h2 className="name">{name}</h2>
-				<p className="info">📅 {date}</p>
-				<p className="info">📍 {location}</p>
-				<p className="info">🎩 Dress Code: {dressCode}</p>
-				<div className="buttons">
-					<a
-						href={whatsappLink}
-						target="_blank"
-						rel="noopener noreferrer"
-						className="button">
-						✅ Conferma su WhatsApp
-					</a>
-					<a
-						href={googleMapsLink}
-						target="_blank"
-						rel="noopener noreferrer"
-						className="button">
-						📍 Vedi la posizione
-					</a>
-				</div>
-			</div>
-		</div>
-	)
+        <h3 className="text-center font-dm text-white uppercase">
+          alle {time} |{" "}
+          <a
+            href={googleMapsLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline transition-all duration-300 text-shadow-white hover:text-pink-300"
+          >
+            {location}
+          </a>
+        </h3>
+
+        <div className="mt-12 flex items-center justify-center gap-3.5">
+          <h3 className="text-center font-dm text-white uppercase">
+            {date.day}
+          </h3>
+          <div className="rounded-full p-4 box-shadow-white outline-4 outline-pink-300">
+            <h3 className="text-center font-dm text-4xl text-white uppercase">
+              {date.number}
+            </h3>
+          </div>
+          <h3 className="text-center font-dm text-white uppercase">
+            {date.month}
+          </h3>
+        </div>
+        <h3 className="pt-4 text-center font-dm text-white uppercase">
+          dress code:{" "}
+          <span className="text-pink-300 text-shadow-white">{dressCode}</span>
+        </h3>
+        <a
+          href={whatsappLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="z-10 mt-20 mb-16 cursor-pointer rounded-lg px-5 py-4 text-center font-dm text-white uppercase box-shadow-white outline-2 outline-white transition-all duration-300 hover:bg-white hover:text-black"
+        >
+          conferma su whatsapp
+        </a>
+      </div>
+    </div>
+  );
 }
