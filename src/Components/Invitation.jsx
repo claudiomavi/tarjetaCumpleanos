@@ -11,21 +11,6 @@ import {
 export default function Invitation() {
   return (
     <div className="relative flex max-h-[874px] max-w-[402px] flex-col items-center justify-center bg-[url(/assets/background.webp)] bg-cover shadow-2xl">
-      <img
-        src="/assets/cocktail-pink.svg"
-        alt="pink cocktail"
-        className="absolute top-0 right-0"
-      />
-      <img
-        src="/assets/cocktail-white.svg"
-        alt="white cocktail"
-        className="absolute top-[26rem] right-0"
-      />
-      <img
-        src="/assets/cocktail-rounded-pink.svg"
-        alt="pink rounded cocktail"
-        className="absolute bottom-8 left-0"
-      />
       <div className="flex flex-col items-center pt-16">
         <h1 className="text-center font-party text-9xl text-white text-shadow-white">
           18
@@ -36,20 +21,19 @@ export default function Invitation() {
         <h3 className="text-center font-dm text-white uppercase">
           festeggiamo il compleanno di {name}
         </h3>
-      
-          <h3 className="text-center font-dm text-white uppercase">
-            alle {time} |{" "}
-            <a
-              href={googleMapsLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline transition-all duration-300 text-shadow-white hover:text-pink-300"
-            >
-              {location}
-            </a>
-          </h3>
-      
-        
+
+        <h3 className="text-center font-dm text-white uppercase">
+          alle {time} |{" "}
+          <a
+            href={googleMapsLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline transition-all duration-300 text-shadow-white hover:text-pink-300"
+          >
+            {location}
+          </a>
+        </h3>
+
         <div className="mt-12 flex items-center justify-center gap-3.5">
           <h3 className="text-center font-dm text-white uppercase">
             {date.day}
