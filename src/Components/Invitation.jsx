@@ -12,17 +12,17 @@ export default function Invitation() {
   return (
     <div className="relative flex max-h-[874px] max-w-[402px] flex-col items-center justify-center bg-[url(/assets/background.webp)] bg-cover shadow-2xl">
       <div className="flex flex-col items-center pt-16">
-        <h1 className="animate-fade-in text-center font-party text-9xl text-white animate-delay-300 text-shadow-white">
+        <h1 className="animate-fade-in text-center font-party text-9xl text-white animate-delay-500 text-shadow-white">
           18
         </h1>
         <h1 className="animate-fade-in pb-8 text-center font-party text-8xl text-pink-300 text-shadow-white">
           Birthday Party
         </h1>
-        <h3 className="animate-fade-in text-center font-dm text-white uppercase animate-delay-500">
+        <h3 className="animate-fade-in text-center font-dm text-white uppercase animate-delay-700">
           festeggiamo il compleanno di {name}
         </h3>
 
-        <h3 className="animate-fade-in text-center font-dm text-white uppercase animate-delay-500">
+        <h3 className="animate-fade-in text-center font-dm text-white uppercase animate-delay-700">
           alle {time} |{" "}
           <a
             href={googleMapsLink}
@@ -34,7 +34,7 @@ export default function Invitation() {
           </a>
         </h3>
 
-        <div className="mt-12 flex animate-fade-in items-center justify-center gap-3.5 animate-delay-500">
+        <div className="mt-12 flex animate-fade-in items-center justify-center gap-3.5 animate-delay-700">
           <h3 className="text-center font-dm text-white uppercase">
             {date.day}
           </h3>
@@ -47,7 +47,7 @@ export default function Invitation() {
             {date.month}
           </h3>
         </div>
-        <h3 className="animate-fade-in pt-4 text-center font-dm text-white uppercase animate-delay-500">
+        <h3 className="animate-fade-in pt-4 text-center font-dm text-white uppercase animate-delay-700">
           dress code:{" "}
           <span className="text-pink-300 text-shadow-white">{dressCode}</span>
         </h3>
@@ -55,7 +55,7 @@ export default function Invitation() {
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="z-10 mt-20 mb-16 animate-fade-in cursor-pointer rounded-lg px-5 py-4 text-center font-dm text-white uppercase box-shadow-white outline-2 outline-white transition-all duration-300 animate-delay-700 hover:bg-white hover:text-black"
+          className="z-10 mt-20 mb-16 animate-fade-in cursor-pointer rounded-lg px-5 py-4 text-center font-dm text-white uppercase box-shadow-white outline-2 outline-white transition-all duration-300 animate-delay-900 hover:bg-white hover:text-black"
         >
           conferma su whatsapp
         </a>
