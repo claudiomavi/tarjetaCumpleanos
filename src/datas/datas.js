@@ -8,4 +8,4 @@ const whatsappMessage = encodeURIComponent(
   `Ciao ${name}! Confermo la mia presenza alla tua festa`,
 );
 export const whatsappLink = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
-export const dressCode = "Accessorio Tropicale";
+export const dressCode = "Accessorio Fluo";
